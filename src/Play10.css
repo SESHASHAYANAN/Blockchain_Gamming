@@ -1,0 +1,162 @@
+/* Game Container */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #87ceeb;
+  font-family: "Arial", sans-serif;
+}
+
+/* Game Board */
+.game-board {
+  width: 500px;
+  height: 500px;
+  border: 2px solid #333;
+  overflow: hidden;
+  position: relative;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bike */
+.bike {
+  font-size: 24px;
+  animation: bike-move 0.2s infinite linear;
+}
+
+.bike.jumping {
+  animation: bike-jump 0.5s;
+}
+
+@keyframes bike-move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bike-jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Obstacles */
+.obstacle {
+  font-size: 24px;
+}
+
+.🏔️ {
+  color: #808080;
+}
+.🌳 {
+  color: #228b22;
+}
+.🏆 {
+  color: #ffd700;
+}
+
+/* Particles */
+.particle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Environmental Effects */
+.cloud {
+  position: absolute;
+  font-size: 32px;
+  animation: cloud-move 20s linear infinite;
+}
+
+@keyframes cloud-move {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 600px;
+  }
+}
+
+.sun {
+  position: absolute;
+  font-size: 48px;
+  animation: sun-move 10s linear infinite;
+}
+
+@keyframes sun-move {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 600px;
+  }
+}
+
+/* Game Over */
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Screen Shake */
+.shake {
+  animation: screen-shake 0.5s;
+}
+
+@keyframes screen-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .game-board {
+    width: 100%;
+    height: 100%;
+  }
+}
