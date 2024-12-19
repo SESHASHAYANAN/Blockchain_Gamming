@@ -1,7 +1,7 @@
 # A CRYPTOCURRENCY BASED GAMING TELEGRAM BOT
 # Demo Youtube Link:- https://www.youtube.com/shorts/wE7jl4CHI-o
 
-ORCA is a Telegram bot that merges gaming and crypto! Users can earn tokens by playing games, trading crypto, buying skins, and betting on matches. The bot is secure, fun, and intuitive—a perfect hub for gamers and crypto enthusiasts!
+ORCA is a Telegram bot that merges gaming and crypto! Users can earn tokens by playing games, trading crypto, buying skins, and betting on matches. The bot is secure, fun, and intuitive—a perfect hub for gamers and crypto enthusiasts !
 The game has an easy and simple UI.
 1. This is a Homepage containing the different game services we provide.
  ![image](https://github.com/user-attachments/assets/e753986f-67fc-4444-8f4a-9e6ed604fb52)
